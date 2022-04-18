@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<title>Look Above!</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+	<script type="module" src="script.js"></script>
+	<canvas hidden id="canv" width="512" height="512"></canvas>
+	<div id="container"></div>
+	</div>
+	<div id="main">
+		<h1 style="font-family: 'Work Sans'; font-style: italic; font-weight: 200;">Look Above</h1>
+		<div id="updating">
+
+			<button id="decYear" class="changeButton">- Year</button>
+			<button id="decMonth" class="changeButton">- Month</button>
+			<button id="decDay" class="changeButton">- Day</button>
+			<button id="decHour" class="changeButton">- Hour</button>
+			<button id="decMinute" class="changeButton">- Minute</button>
+			<div id="labels">
+				<button id="AutoPlay" class="changeButton">Play</button>
+				<span class="datetime" id="date"></span>
+				<span class="datetime" id="time"></span>
+			</div>
+			<button id="incMinute" class="changeButton">+ Minute</button>
+			<button id="incHour" class="changeButton">+ Hour</button>
+			<button id="incDay" class="changeButton">+ Day</button>
+			<button id="incMonth" class="changeButton">+ Month</button>
+			<button id="incYear" class="changeButton">+ Year</button>
+		</div>
+	</div>
+	<div id="credits">
+		Made By: Eric Huang, Aarush Agrawal, Eric Liu, Vinay Bidin
+		<div>
+			<a href="https://github.com/lookabove123/lookabove123.github.io" target="_blank"> Github</a>
+		</div>
+	</div>
+
+	<!-- Import maps polyfill -->
+	<!-- Remove this when import maps will be widely supported -->
+	<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r115/three.module.min.js"
+			}
+		}
+	</script>
+
+</body>
+
+</html>
